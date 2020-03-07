@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-    <title>RealistikPanel! - {{ title }}</title>
+    <title>Aluri Admin Panel (AAP) - {{ title }}</title>
     <!--Icon kit things-->
     <link rel="stylesheet" href="/static/css/uikit.min.css" />
     <script src="/static/js/uikit.min.js"></script>
@@ -26,9 +26,8 @@
                     <div class="d-sm-none d-lg-inline-block">Hi, {{ session["AccountName"] }}!</div>
                 </a>
             </ul>
-        </nav>
-        <div class="dropdown-menu dropdown-menu-right show">
-            <div class="dropdown-title">RealistikPanel!</div>
+                    <div class="dropdown-menu dropdown-menu-right show">
+            <div class="dropdown-title">AAP</div>
             <a href="{{ config['ServerURL'] }}/u/{{ session['AccountId'] }}" class="dropdown-item has-icon">
                 <i class="far fa-user"></i> Profile
             </a>
@@ -38,10 +37,11 @@
             </a>
         </div>
         {% endif %}
+        </nav>
         <div class="main-sidebar sidebar-style-2" tabindex="1" style="overflow: hidden; outline: none;">
             <aside id="sidebar-wrapper">
                 <div class="sidebar-brand">
-                    <a href="/">RealistikPanel!</a>
+                    <a href="/">Aluri Admin Panel (AAP)</a>
                 </div>
                 <ul class="sidebar-menu">
                     <li class="menu-header">Information</li>
