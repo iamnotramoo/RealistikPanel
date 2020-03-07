@@ -25,13 +25,13 @@
 					Hi, {{ session["AccountName"] }}!
 				</div></a>
 			</div>
-			<div class="dropdown-menu dropdown-menu-right show">
+		</nav>
+					<div class="dropdown-menu dropdown-menu-right show">
 				<div class="dropdown-title">
 					AAP
 				</div><a class="dropdown-item has-icon" href="{{%20config['ServerURL']%20}}/u/{{%20session['AccountId']%20}}"><i class="far fa-user"></i> Profile</a>
 				<div class="dropdown-divider"></div><a class="dropdown-item has-icon text-danger" href="/logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
 			</div>
-		</nav>
 		{% endif %}
 	</div>
 		<div class="main-sidebar sidebar-style-2" style="overflow: hidden; outline: none;" tabindex="1">
