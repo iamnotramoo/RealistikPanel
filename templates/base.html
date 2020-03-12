@@ -54,8 +54,8 @@
                     <a href="/bancho/settings" class="nav-link"><span uk-icon="cog"></span><span> Bancho Settings</span></a>
                     <a href="/system/settings" class="nav-link"><span uk-icon="nut"></span><span> System Settings</span></a>
                     <li class="menu-header">User Options</li>
-                    <a href="" class="nav-link"><span uk-icon="user"></span><span> Profile</span></a>
-                    <a href="" class="nav-link has-icon text-danger"><span uk-icon="sign-out"></span><span> Logout</span></a>
+                    <a href="{{ config['ServerURL'] }}/u/{{ session['AccountId'] }}" class="nav-link"><span uk-icon="user"></span><span> Profile</span></a>
+                    <a href="/logout" class="nav-link has-icon text-danger"><span uk-icon="sign-out"></span><span> Logout</span></a>
                 </ul>
             </aside>
         </div>
