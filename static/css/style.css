@@ -1730,6 +1730,8 @@ h6 .badge {
 
   .navbar-expand-lg .navbar-nav .dropdown-menu-right {
     right: 0;
+    position: relative;
+    display: inline-block;
     left: auto; } }
 /* 3.19 Dropdown */
 .dropdown-item.has-icon i {
