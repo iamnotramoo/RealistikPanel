@@ -35,17 +35,6 @@
                         <img alt="pfp" src="{{ config['AvatarServer'] }}{{ session['AccountId'] }}" class="rounded-circle mr-1">
                         <div class="d-sm-none d-lg-inline-block">Hi, {{ session["AccountName"] }}!</div>
                     </a>
-                    <br />
-                    <div class="dropdown-menu dropdown-menu-right">
-                        <div class="dropdown-title">RealistikPanel!</div>
-                        <a href="{{ config['ServerURL'] }}u/{{ session['AccountId'] }}" class="dropdown-item has-icon">
-                            <i class="far fa-user"></i> Profile
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="/logout" class="dropdown-item has-icon text-danger">
-                            <i class="fas fa-sign-out-alt"></i> Logout
-                        </a>
-                    </div>
                 </li>
             </ul>
         </nav>
@@ -56,14 +45,17 @@
                     <a href="/">RealistikPanel!</a>
                 </div>
                 <ul class="sidebar-menu">
-                    <li class="menu-header">Information</li>
+                    <li class="menu-header">Server Information</li>
                     <a href="/dash" class="nav-link"><span uk-icon="home"></span><span> Dashboard</span></a>
                     <a href="/users/1" class="nav-link"><span uk-icon="user"></span><span> Users</span></a>
                     <a href="/logs/1" class="nav-link"><span uk-icon="calendar"></span><span> Logs</span></a>
-                    <li class="menu-header">Actions</li>
+                    <li class="menu-header">Admin Actions</li>
                     <a href="/rank" class="nav-link"><span uk-icon="star"></span><span> Beatmap Ranking</span></a>
                     <a href="/bancho/settings" class="nav-link"><span uk-icon="cog"></span><span> Bancho Settings</span></a>
                     <a href="/system/settings" class="nav-link"><span uk-icon="nut"></span><span> System Settings</span></a>
+                    <li class="menu-header">User Options</li>
+                    <a href="" class="nav-link"><span uk-icon="user"></span><span> Profile</span></a>
+                    <a href="" class="nav-link has-icon text-danger"><span uk-icon="sign-out"></span><span> Logout</span></a>
                 </ul>
             </aside>
         </div>
