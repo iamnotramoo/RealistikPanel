@@ -1730,11 +1730,7 @@ h6 .badge {
 
   .navbar-expand-lg .navbar-nav .dropdown-menu-right {
     right: 0;
-    position: relative; }
-  .dropdown-right {
-}
-  .dropdown-content {
-    right: 0; }
+    left: auto; } }
 /* 3.19 Dropdown */
 .dropdown-item.has-icon i {
   margin-top: -1px;
