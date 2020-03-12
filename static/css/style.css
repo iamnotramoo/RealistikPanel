@@ -1525,7 +1525,6 @@ h6 .badge {
   align-items: center; }
   .navbar .navbar-brand {
     display: block;
-    position: absolute;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 3px;
