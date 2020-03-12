@@ -34,7 +34,7 @@
                         <img alt="pfp" src="{{ config['AvatarServer'] }}{{ session['AccountId'] }}" class="rounded-circle mr-1">
                         <div class="d-sm-none d-lg-inline-block">Hi, {{ session["AccountName"] }}!</div>
                     </a>
-                    <div class="dropdown-content">
+                    <div class="dropdown-menu dropdown-menu-right show">
                         <div class="dropdown-title">Aluri Admin Panel (AAP)</div>
                         <a href="{{ config['ServerURL'] }}/u/{{ session['AccountId'] }}" class="dropdown-item has-icon">
                             <i class="far fa-user"></i> Profile
