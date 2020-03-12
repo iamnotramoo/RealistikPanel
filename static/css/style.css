@@ -1741,6 +1741,12 @@ h6 .badge {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 12px 16px;
     z-index: 1; }
+
+  .dropdown-right {
+    right: 0;
+    position: relative;
+    display: inline-block;
+    left: auto;} }
 /* 3.19 Dropdown */
 .dropdown-item.has-icon i {
   margin-top: -1px;
