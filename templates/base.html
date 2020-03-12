@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" oncontextmenu="return false" onkeypress="return false" onmousedown="return false">
+<html>
 <head>
     <title>Aluri Admin Panel (AAP) - {{ title }}</title>
     <!--Icon kit things-->
@@ -13,14 +13,6 @@
     <link rel="stylesheet" href="/static/css/components.css">
     <link rel="stylesheet" href="/static/css/realistik.css">
     <link rel="icon" type="image/png" href="/static/img/rosu.ico">
-    <!--JS Modules-->
-    <script src="/static/js/stisla.js"></script>
-    <script src="/static/modules/jquery.min.js"></script>
-    <script src="/static/modules/popper.js"></script>
-    <script src="/static/modules/tooltip.js"></script>
-    <script src="/static/modules/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/static/modules/nicescroll/jquery.nicescroll.min.js"></script>
-    <script src="/static/modules/moment.min.js"></script>
 </head>
 
 <body>
@@ -29,24 +21,22 @@
         <nav class="navbar bg-primary">
             <a class="navbar-brand" href="#">{{ config['ServerName'] }}</a>
             <ul class="navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user" aria-expanded="false">
-                        <img alt="pfp" src="{{ config['AvatarServer'] }}{{ session['AccountId'] }}" class="rounded-circle mr-1">
-                        <div class="d-sm-none d-lg-inline-block">Hi, {{ session["AccountName"] }}!</div>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right show">
-                        <div class="dropdown-title">Aluri Admin Panel (AAP)</div>
-                        <a href="{{ config['ServerURL'] }}/u/{{ session['AccountId'] }}" class="dropdown-item has-icon">
-                            <i class="far fa-user"></i> Profile
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="/logout" class="dropdown-item has-icon text-danger">
-                            <i class="fas fa-sign-out-alt"></i> Logout
-                        </a>
-                    </div>
-                </li>
+                <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user" aria-expanded="false">
+                    <img alt="pfp" src="{{ config['AvatarServer'] }}{{ session['AccountId'] }}" class="rounded-circle mr-1">
+                    <div class="d-sm-none d-lg-inline-block">Hi, {{ session["AccountName"] }}!</div>
+                </a>
             </ul>
         </nav>
+        <div class="dropdown-menu dropdown-menu-right show">
+            <div class="dropdown-title">Aluri Admin Panel</div>
+            <a href="{{ config['ServerURL'] }}/u/{{ session['AccountId'] }}" class="dropdown-item has-icon">
+                <i class="far fa-user"></i> Profile
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="/logout" class="dropdown-item has-icon text-danger">
+                <i class="fas fa-sign-out-alt"></i> Logout
+            </a>
+        </div>
         {% endif %}
         <div class="main-sidebar sidebar-style-2" tabindex="1" style="overflow: hidden; outline: none;">
             <aside id="sidebar-wrapper">
@@ -62,7 +52,7 @@
                     <a href="/rank" class="nav-link"><span uk-icon="star"></span><span> Beatmap Ranking</span></a>
                     <a href="/bancho/settings" class="nav-link"><span uk-icon="cog"></span><span> Bancho Settings</span></a>
                     <a href="/system/settings" class="nav-link"><span uk-icon="nut"></span><span> System Settings</span></a>
-                    <li class="menu-header" style="text-align: center;">© RealistikDash 2020</li>
+                    <li class="menu-header" style="text-align: center;">© Realistik Dash</li>
                 </ul>
             </aside>
         </div>
