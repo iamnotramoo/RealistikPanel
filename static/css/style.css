@@ -1722,11 +1722,14 @@ h6 .badge {
 
   .navbar {
     left: 5px;
-    right: 0; }
+    right: 0;
+    min-width: 500px;
+    padding: 12px 16px;
+    z-index: 1; }
     .navbar .dropdown-menu {
       display: none;
       position: absolute; 
-      min-width: 160px;
+      min-width: 500px;
       padding: 12px 16px;
       z-index: 1; }
     .navbar .navbar-nav {
